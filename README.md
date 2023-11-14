@@ -1,0 +1,31 @@
+# URL-Filtering
+# Network Proxy with URL Filtering
+
+This repository contains a simple Python script (`filter.py`) that acts as a basic proxy server with URL filtering capabilities. 
+The script intercepts incoming HTTP requests, extracts the requested URL, checks against a blacklist, and either allows or blocks the request.
+
+Features:
+  Proxy Server:Acts as a proxy server between the user's browser and the actual web server.
+  URL Filtering: Blocks access to websites listed in the provided `blacklist.txt` file.
+  Dynamic Port Handling: Handles both HTTP and HTTPS requests on different ports.
+  Error Handling: Provides basic error handling for different scenarios.
+
+Prerequisites
+    Python: Ensure you have Python installed on your system. The script is compatible with Python 3.
+    mitmproxy: Install mitmproxy by following the instructions on the official mitmproxy installation guide.
+      Refer: https://docs.mitmproxy.org/stable/overview-installation/
+
+Configuration:
+  Blacklist: Add websites to the `blacklist.txt` or `blocked_websites.txt` file, with each URL on a new line.
+    Example `blacklist.txt`:
+    ```
+    example.com
+    blocked-site.com
+    ```
+    
+Notes:
+  HTTPS Handling: The script currently does not handle HTTPS connections due to the lack of SSL certificate decryption.
+  Blocking Message: When a blocked website is accessed, a simple "404 Page Not Found" message is sent to the client.
+
+Contributing:
+  Feel free to contribute by submitting issues or pull requests. Your feedback and contributions are highly appreciated!
