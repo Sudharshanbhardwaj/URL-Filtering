@@ -6,6 +6,7 @@ The script intercepts incoming HTTP requests, extracts the requested URL, checks
 
 Deployment and Running of the code:
   If we want to run the proxy server, whether from the custom HTTP proxy or using the mimtmproxy on your local machine, we use the loop back trick to revert the messages to our local machine So, If you are using Windows, you should open the proxy settings, and configure the local address of machine and port number the proxy listening to set up the proxy on your machine. The modules imported in the python script are cross-platform.
+  
 Features:
   Proxy Server:Acts as a proxy server between the user's browser and the actual web server.
   URL Filtering: Blocks access to websites listed in the provided `blacklist.txt` file.
