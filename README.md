@@ -29,6 +29,7 @@ Configuration:
 Notes:
   HTTPS Handling: The script currently does not handle HTTPS connections due to the lack of SSL certificate decryption.
   Blocking Message: When a blocked website is accessed, a simple "404 Page Not Found" message is sent to the client.
+To run the second version of this project, use mitmproxy -s fitertwo.py in the command prompt. This should be done after configuring the proxy server in our system.
 
 Contributing:
   Feel free to contribute by submitting issues or pull requests. Your feedback and contributions are highly appreciated!
