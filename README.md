@@ -29,6 +29,7 @@ Configuration:
     example.com
     blocked-site.com
     ```
+here is the PPT slides: https://docs.google.com/presentation/d/11zcltbdB1ssudXDirqIm2iM6MzvVkKuNY1-JKYaGPsc/edit#slide=id.g29b3c30025a_0_271 
     
 Notes:
   HTTPS Handling: The script currently does not handle HTTPS connections due to the lack of SSL certificate decryption.
